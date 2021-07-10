@@ -121,6 +121,15 @@ z-index: 4;
     font-size:30px;
 }
 
+#quote span {
+    color:gray;
+    font-size:15px;
+}
+
+#quote hr {
+    background-color: gray;
+}
+
 /* Close Button */
 .close {
     color: #aaa;

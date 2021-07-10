@@ -257,7 +257,6 @@ const zodQuote = {
 
 // Assign values to variables to be returned in the html
 
-console.log(`${zodQuote.dateToday}\n`);
 console.log(`${zodQuote.guessBirthdate()}`);
 console.log(`${zodQuote.guessActivity()}\n`);
 
@@ -272,7 +271,7 @@ const span = document.getElementsByClassName("close")[0];
 // Open modal after 5 seconds
 setTimeout(function() {
   modal.style.display = "block";
-  document.getElementById("quote").innerHTML = zodQuote.generateQuotesByDay();
+  document.getElementById("quote").innerHTML = `${zodQuote.generateQuotesByDay()} <br><br><hr><br> 📅 <span>${zodQuote.dateToday}</span>`;
 },4000)
 
 // Close modal

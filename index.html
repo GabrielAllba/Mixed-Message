@@ -10,6 +10,8 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+
+        <!-- Header and Navigation Bar-->
         <header>
             <nav>
                 <a href="#default" class="logo"><img id="logo" src="img/logo.png"><span id="text-logo">Mixed Messages</span></a>
@@ -24,17 +26,19 @@
                 <h1 id="default">MIXED MESSAGES</h1>
                 <p id="z">A message generator program written in JavaScript that gives a new randomized output every time the user runs a program.</p>
             </div>
-
-            <!-- Quote Pop Up -->
-            <div id="myModal" class="modal">
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <p id="quote">
-                        Text here.
-                    </p>
-                </div>
-            </div>
         </header>
+
+        <!-- Quote Pop Up -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p id="quote">
+                    <!-- Random quote will be written here-->>
+                </p>
+            </div>
+        </div>
+
+        
         <script src="script.js"></script>
     </body>
 </html>
