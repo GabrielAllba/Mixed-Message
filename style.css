@@ -6,7 +6,7 @@ body {
 /* Navigation Bar */
 
 nav {
-    background-color: #14213D;
+    background-color: #004AAD;
     overflow: hidden;
     padding: 10px 20px;
     margin-bottom: 0px;
@@ -31,7 +31,7 @@ nav a.logo {
 }
 
 .nav-right a:hover {
-    background-color: #1f0e6b;
+    background-color: #0065ad;
 }
 
 .nav-right a:active {
@@ -220,7 +220,7 @@ td a:visited,td a:hover,td a:active {
 }
 
 footer {
-    background-color: #fca311;
+    background-color: #e78403;
     padding: 30px;
     color:white;
     text-align: center;
