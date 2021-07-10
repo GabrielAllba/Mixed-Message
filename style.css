@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+/* Navigation Bar*/
+
+nav {
+    background-color: #14213D;
+    overflow: hidden;
+    padding: 10px 20px;
+    margin-bottom: 0px;
+    position: relative;
+    z-index: 1;
+}
+
+nav a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+nav a.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.nav-right a:hover {
+    background-color: #1f0e6b;
+}
+
+.nav-right a:active {
+    background-color: dodgerblue;
+}
+
+#logo {
+    height: 40px;
+    vertical-align: middle;
+}
+
+.nav-right a {
+    vertical-align: middle;
+    margin-top: 5px;
+    float: right;
+}
+
+/* Header Content*/
+
+#header-bg-bg-img {
+    background-color: black;
+    position: relative;
+    z-index: 0;
+}
+
+#header-bg-img {
+    background-image: linear-gradient(rgba(255, 255, 255, 0), black), url('img/header.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    color:white;
+    height: 600px;
+    -webkit-filter:grayscale(30%) blur(10px) brightness(40%);
+    filter:grayscale(30%) blur(10px) brightness(40%);
+}
+
+#project {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin:0px;
+    text-align: center;
+    font-size: 100px;
+}
+
+/* Color palette
+black 000000
+dark blue 14213d
+orange fca311
+gray e5e5e5
+whiteffffff
+*/
