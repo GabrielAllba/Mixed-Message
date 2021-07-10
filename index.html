@@ -16,7 +16,6 @@
             <nav>
                 <a href="#default" class="logo"><img id="logo" src="img/logo.png"><span id="text-logo">Mixed Messages</span></a>
                 <div class="nav-right">
-                    <a href="#about">About</a>
                     <a href="#zodiac">ZodiacBot</a>
                     <a href="#project">Project</a>
                 </div>
@@ -25,6 +24,30 @@
             <div id="project">
                 <h1 id="default">MIXED MESSAGES</h1>
                 <p id="z">A message generator program written in JavaScript that gives a new randomized output every time the user runs a program.</p>
+                <table>
+                    <tr>
+                        <td>
+                            <a href="https://github.com/daniellabrador">
+                                <img src="img/Daniel.png">
+                                <br>
+                                <br>
+                                <span class="devName">DANIEL LABRADOR</span>
+                            </a>
+                            <br>
+                            <span id="danielAct"></span>
+                        </td>
+                        <td>
+                            <a href="https://github.com/GabrielAllba">
+                                <img src="img/Riel.png">
+                                <br>
+                                <br>
+                                <span class="devName">GABRIEL ALLBA</span>
+                            </a>
+                            <br>
+                            <span id="rielAct"></span>
+                        </td>
+                    </tr>
+                </table>
             </div>
         </header>
 
@@ -42,13 +65,12 @@
 
         <main>
         <!-- ZodiacBot-->
-        <section class="zodiacBotSection">
+        <section class="zodiacBotSection" id="zodiac">
             <img class="zodiacBot" src="img/robot.png" height="500px" align="left">
             <button class="zodiacBtn">READ MY HAND</button>
             <div id="zodiacBubble">Awaiting for your request . . .</div>
         </section>
         </main>
-
         <script src="script.js"></script>
     </body>
 </html>

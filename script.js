@@ -122,7 +122,7 @@ const zodQuote = {
     devActivities: [
         '🌎 Sensing the world', '🧭 Mounting an expedition',
         '💻 Writing an app', '🎨 Crafting another masterpiece',
-        '🔢 Calculating risks', '📖 Reading a book', '🛌 Dreaming about world peace',
+        '🔢 Calculating risks', '📖 Reading a book', '🌜 Dreaming about world peace',
         '🏇 Riding a horse', '🚗 Driving a car', '🤹‍♂️ Hanging out with friends',
         '🔎 Seeking for answers', '⏰ Beating a deadline', '💤 Hitting up the hay'
     ],
@@ -295,7 +295,7 @@ const zodQuote = {
     }
 }
 
-// Modal
+// Modal variables
 const modal = document.getElementById("myModal");
 const modalSpan = document.getElementsByClassName("close")[0];
 
@@ -315,6 +315,10 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+// Developers
+document.getElementById("danielAct").innerHTML = `${zodQuote.devActivity}`;
+document.getElementById("rielAct").innerHTML = `${zodQuote.devActivity}`;
 
 // ZodiacBot
 const zodiacBtn = document.getElementsByClassName("zodiacBtn")[0];
