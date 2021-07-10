@@ -219,11 +219,11 @@ td a:visited,td a:hover,td a:active {
     background-color: #0085d8;
 }
 
-
-/* Color palette
-black 000000
-dark blue 14213d
-orange fca311
-gray e5e5e5
-whiteffffff
-*/
+footer {
+    background-color: #fca311;
+    padding: 30px;
+    color:white;
+    text-align: center;
+    margin-top:50px;
+    position:relative;
+}
