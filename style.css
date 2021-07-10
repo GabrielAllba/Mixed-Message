@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+nav {
+    background-color: #14213D;
+    overflow: hidden;
+    padding: 10px 20px;
+}
+
+nav a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+nav a.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.nav-right a:hover {
+    background-color: #1f0e6b;
+}
+
+.nav-right a:active {
+    background-color: dodgerblue;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+#logo {
+    height: 40px;
+    vertical-align: middle;
+}
+
+.nav-right a {
+    vertical-align: middle;
+    margin-top: 5px;
+    float: right;
+}
