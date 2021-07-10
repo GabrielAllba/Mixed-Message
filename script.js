@@ -6,7 +6,7 @@ const zodQuote = {
         'Scorpio','Sagittarius','Capricorn'
     ],
     
-    happiness: [10,20,30,40,50,60,5,7,8,9,12,15,25,35,44,28],
+    happiness: [10,20,30,40,50,60,5,7,8,9,12,15,25,35,44,28,100,90,80,70,85,65],
         
     mondayQuotes: [
         '“The best time to plant a tree was 20 years ago. The second best time is now.” — Chinese proverb',
@@ -102,10 +102,10 @@ const zodQuote = {
     ],
     
     activities:[
-        'eat together with','marry',
-        'be punched by','be kissed by',
-        'watch a movie with', 'gardening with',
-        'go swim with','go run with',
+        'eating together with','marrying',
+        'punched by','kissed by',
+        'watching a movie with', 'gardening with',
+        'swimming with','running with',
         'dancing with','kicked by',
         'gardening with'
     ],
@@ -115,18 +115,26 @@ const zodQuote = {
         'your dad','your mom','your grandfather',
         'your grandmother','Chris Hemsworth',
         'C. Ronaldo','Ariana Grande',
-        'your friends','lion','komodo dragon',
-        'tiger','bear'
+        'your friends','a lion','a komodo dragon',
+        'a tiger','a bear'
+    ],
+    
+    devActivities: [
+        '🌎 Sensing the world', '🧭 Mounting an expedition',
+        '💻 Writing an app', '🎨 Crafting another masterpiece',
+        '🔢 Calculating risks', '📖 Reading a book', '🛌 Dreaming about world peace',
+        '🏇 Riding a horse', '🚗 Driving a car', '🤹‍♂️ Hanging out with friends',
+        '🔎 Seeking for answers', '⏰ Beating a deadline', '💤 Hitting up the hay'
     ],
 
     generateRandomNumber(number){
-        //returning random number between 0 - number
+        //return a random number between 0 and the length of the array
         let createRandom = Math.floor(Math.random() * number)
         return createRandom;
     },
-    
+
+    //returning random value from properties
     generateData(arrs){
-        //returning random value from properties
         const randIndex = this.generateRandomNumber(arrs.length)
         return arrs[randIndex];
     },
@@ -166,9 +174,9 @@ const zodQuote = {
         return currentMonth;
     },
     //printing day-date-month-year
-    generateFullDate(){
+    get dateToday(){
         const d = new Date()
-        console.log("Today is " + this.generateDay() + ", " + d.getDate() + " " + this.generateMonth() + " " + d.getFullYear());
+        return `Today is ${this.generateDay()}, ${d.getDate()} ${this.generateMonth()} ${d.getFullYear()}.`
     },
 
     //generating quotes based on what day's now
@@ -183,66 +191,74 @@ const zodQuote = {
         else{
             quotes = this.generateData(zodQuote.tuesToFriQuotes)
         }
-        console.log("Here is a quote for you: " + quotes)
+        return "Here is a quote for you: " + quotes;
     },
     
     dateOfBirth: '',
 
-    printZodiacsMessage(){
+    // Assign random activity to a developer
+    get devActivity(){
+        return this.generateData(this.devActivities);
+    },
+
+    guessBirthdate(){
         const zodiacs = this.generateData(zodQuote.zodiac);
-        const happy = this.generateData(zodQuote.happiness);
-        const activity = this.generateData(zodQuote.activities);
-        const artists = this.generateData(zodQuote.artist);
+
+        // Guess: date of birth
         switch(zodiacs){
             case 'Aquarius':
-                this.dateOfBirth = '20 january - 18 february'
+                this.dateOfBirth = '20 January and 18 February'
                 break;
             case 'Pisces':
-                this.dateOfBirth = '19 february - 20 march'
+                this.dateOfBirth = '19 February and 20 March'
                 break;
             case 'Aries':
-                this.dateOfBirth = '21 March - 19 April';
+                this.dateOfBirth = '21 March and 19 April';
                 break;
             case 'Taurus':
-                this.dateOfBirth = '20 April - 20 May';
+                this.dateOfBirth = '20 April and 20 May';
                 break;
             case 'Gemini':
-                this.dateOfBirth = '21 May - 20 June';
+                this.dateOfBirth = '21 May and 20 June';
                 break;
             case 'Cancer':
-                this.dateOfBirth = '21 June - 22 July';
+                this.dateOfBirth = '21 June and 22 July';
                 break;        
             case 'Leo':
-                this.dateOfBirth = '23 July - 22 August';
+                this.dateOfBirth = '23 July and 22 August';
                 break;
             case 'Virgo':
-                this.dateOfBirth = '23 August - 22 September';
+                this.dateOfBirth = '23 August and 22 September';
                 break;
             case 'Libra':
-                this.dateOfBirth = '23 September - 22 October';
+                this.dateOfBirth = '23 September and 22 October';
                 break;
             case 'Scorpio':
-                this.dateOfBirth = '23 October - 21 November';
+                this.dateOfBirth = '23 October and 21 November';
                 break;
             case 'Sagittarius':
-                this.dateOfBirth = '22 November - 21 December';
+                this.dateOfBirth = '22 November and 21 December';
                 break;
             case 'Capricorn':
-                this.dateOfBirth = '22 December - 19 January';
+                this.dateOfBirth = '22 December and 19 January';
                 break;
         }
-        console.log("Your zodiak is " + zodiacs + ". You were born between " + this.dateOfBirth + "." + " Your happiness is " + happy + "%.") 
-        console.log("\n")
-        console.log("Actually, today you will " + activity + ' ' + artists);
+        return `Judging by your aura today, you're definitely a ${zodiacs}. So, your birthday must be between ${this.dateOfBirth}.`
         
-    }        
+    },
+    
+    guessActivity(){
+        const happy = this.generateData(zodQuote.happiness);
+        const activity = this.generateData(zodQuote.activities);
+        const artist = this.generateData(zodQuote.artist);
+        return `Based on my calculations, you are going to be ${activity} ${artist} today. You are ${happy}% happy about it.`
+    }
 }
 
-zodQuote.generateFullDate()
-console.log("\n")
-zodQuote.generateQuotesByDay()
-console.log("\n")
-zodQuote.printZodiacsMessage();
+console.log(`${zodQuote.dateToday}\n`);
+console.log(`${zodQuote.generateQuotesByDay()}\n`);
+console.log(`${zodQuote.guessBirthdate()}`);
+console.log(`${zodQuote.guessActivity()}\n`);
 
-
-
+console.log(`Daniel: ${zodQuote.devActivity}`)
+console.log(`Gabriel: ${zodQuote.devActivity}`)
