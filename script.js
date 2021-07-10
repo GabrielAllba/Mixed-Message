@@ -195,6 +195,7 @@ const zodQuote = {
     },
     
     dateOfBirth: '',
+    zodiacSign:'',
 
     // Assign random activity to a developer
     get devActivity(){
@@ -243,7 +244,46 @@ const zodQuote = {
                 this.dateOfBirth = '22 December and 19 January';
                 break;
         }
-        return `Judging by your aura today, you're definitely a ${zodiacs}. So, your birthday must be between ${this.dateOfBirth}.`
+
+        switch(zodiacs){
+            case 'Aquarius':
+                this.zodiacSign = '♒';
+                break;
+            case 'Pisces':
+                this.zodiacSign = '♓';
+                break;
+            case 'Aries':
+                this.zodiacSign = '♐';
+                break;
+            case 'Taurus':
+                this.zodiacSign = '♉';
+                break;
+            case 'Gemini':
+                this.zodiacSign = '♊';
+                break;
+            case 'Cancer':
+                this.zodiacSign = '♋';
+                break;        
+            case 'Leo':
+                this.zodiacSign = '♌';
+                break;
+            case 'Virgo':
+                this.zodiacSign = '♍';
+                break;
+            case 'Libra':
+                this.zodiacSign = '♎';
+                break;
+            case 'Scorpio':
+                this.zodiacSign = '♏';
+                break;
+            case 'Sagittarius':
+                this.zodiacSign = '♐';
+                break;
+            case 'Capricorn':
+                this.zodiacSign = '♑';
+                break;
+        }
+        return `${this.zodiacSign} Judging by your aura today, your sign is definitely ${zodiacs}. So, your birthday must be between ${this.dateOfBirth}.`
         
     },
     
@@ -255,27 +295,18 @@ const zodQuote = {
     }
 }
 
-// Assign values to variables to be returned in the html
-
-console.log(`${zodQuote.guessBirthdate()}`);
-console.log(`${zodQuote.guessActivity()}\n`);
-
-console.log(`Daniel: ${zodQuote.devActivity}`)
-console.log(`Riel: ${zodQuote.devActivity}`)
-
 // Modal
 const modal = document.getElementById("myModal");
-const btn = document.getElementById("myBtn");
-const span = document.getElementsByClassName("close")[0];
+const modalSpan = document.getElementsByClassName("close")[0];
 
-// Open modal after 5 seconds
+// Open modal after 4 seconds
 setTimeout(function() {
   modal.style.display = "block";
   document.getElementById("quote").innerHTML = `${zodQuote.generateQuotesByDay()} <br><br><hr><br> 📅 <span>${zodQuote.dateToday}</span>`;
-},4000)
+},100000)
 
 // Close modal
-span.onclick = function() {
+modalSpan.onclick = function() {
   modal.style.display = "none";
 }
 
@@ -284,3 +315,15 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+// ZodiacBot
+const zodiacBtn = document.getElementsByClassName("zodiacBtn")[0];
+zodiacBtn.onclick = function(){
+    document.getElementById("zodiacBubble").innerHTML = `<span>zodiacBot.print();</span><br><br> ${zodQuote.guessBirthdate()}<br><br>🌞 ${zodQuote.guessActivity()}<br><br><span>zodiacBot.terminate();</span>`;
+    zodiacBtn.style.display = "none";
+}
+
+
+// Test
+console.log(`Daniel: ${zodQuote.devActivity}`)
+console.log(`Riel: ${zodQuote.devActivity}`)

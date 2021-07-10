@@ -145,6 +145,47 @@ z-index: 4;
     cursor: pointer;
 }
 
+/* ZodiacBot*/
+
+.zodiacBotSection {
+    padding: 50px;
+}
+
+.zodiacBot {
+    margin-right: 75px;
+}
+
+#zodiacBubble {
+    margin: 80px 40px 40px 40px;
+    font-size: 30px;
+}
+
+#zodiacBubble span{
+    color:red;
+    background-color:beige;
+    padding:10px;
+    border-radius: 10px;
+}
+
+.zodiacBtn {
+    background-color: #00B0D8;
+    color:white;
+    border:none;
+    padding:25px;
+    font-size:30px;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+.zodiacBtn:hover {
+    background-color: #009ed8;
+}
+.zodiacBtn:active {
+    background-color: #0085d8;
+}
+
+
 /* Color palette
 black 000000
 dark blue 14213d
