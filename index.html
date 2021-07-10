@@ -8,7 +8,6 @@
         <title>Mixed Messages</title>
 
         <link rel="stylesheet" href="style.css">
-        <script src="script.js"></script>
     </head>
     <body>
         <header>
@@ -23,8 +22,19 @@
             <div id="header-bg-bg-img"><div id="header-bg-img"></div></div>
             <div id="project">
                 <h1 id="default">MIXED MESSAGES</h1>
-                <p>A message generator program written in JavaScript that gives a new randomized output every time the user runs a program.</p>
+                <p id="z">A message generator program written in JavaScript that gives a new randomized output every time the user runs a program.</p>
+            </div>
+
+            <!-- Quote Pop Up -->
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p id="quote">
+                        Text here.
+                    </p>
+                </div>
             </div>
         </header>
+        <script src="script.js"></script>
     </body>
 </html>
