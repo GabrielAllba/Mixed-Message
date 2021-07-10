@@ -299,11 +299,11 @@ const zodQuote = {
 const modal = document.getElementById("myModal");
 const modalSpan = document.getElementsByClassName("close")[0];
 
-// Open modal after 4 seconds
+// Open modal after 15 seconds
 setTimeout(function() {
   modal.style.display = "block";
   document.getElementById("quote").innerHTML = `${zodQuote.generateQuotesByDay()} <br><br><hr><br> 📅 <span>${zodQuote.dateToday}</span>`;
-},100000)
+},15000)
 
 // Close modal
 modalSpan.onclick = function() {
