@@ -34,4 +34,4 @@ To achieve the modal pop up box, the developers took inpiration to this [resourc
 The project was a collaborative effort of [Daniel Labrador](https://github.com/daniellabrador) and [Gabriel Allba](https://github.com/GabrielAllba). We live in different timezones, so the collaboration was done remotely.
 
 ## Launch
-See [Mixed-Message](https://gabrielallba.github.io/Mixed-Message/){:target="_blank rel="noopener"} here.
+See [Mixed-Message](https://gabrielallba.github.io/Mixed-Message/){:target="\_blank"} here.
