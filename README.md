@@ -7,6 +7,8 @@ A message generator program powered by Javascript that gives a new randomized ou
 - [Technologies](#technologies)
 - [Setup](#setup)
 - [Status](#status)
+- [Notes](#notes)
+- [Launch](#launch)
 
 ## General information
 ---
