@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="keywords" content="Codecademy">
+        <meta name="description" content="Codecademy project: A message generator program that gives a new randomized output every time the user runs a program.">
+
+        <title>Mixed Messages</title>
+
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="img/favicon.ico">
+    </head>
+    <body>
+
+        <!-- Header and Navigation Bar-->
+        <header>
+            <nav>
+                <a href="#" class="logo"><img id="logo" src="img/logo.png"><span id="text-logo">Mixed Messages</span></a>
+                <div class="nav-right">
+                    <a href="#zodiac">ZodiacBot</a>
+                    <a href="#project">Project</a>
+                </div>
+            </nav>
+            <div id="header-bg-bg-img"><div id="header-bg-img"></div></div>
+            <div id="project">
+                <h1 id="default">MIXED MESSAGES</h1>
+                <p id="z">A message generator program written in JavaScript that gives a new randomized output every time the user runs a program.</p>
+                <table>
+                    <tr>
+                        <td>
+                            <a href="https://github.com/daniellabrador" target="_blank">
+                                <img src="img/Daniel.png">
+                                <br>
+                                <br>
+                                <span class="devName">DANIEL LABRADOR</span>
+                            </a>
+                            <br>
+                            <span id="danielAct"></span>
+                        </td>
+                        <td>
+                            <a href="https://github.com/GabrielAllba" target="_blank">
+                                <img src="img/Riel.png">
+                                <br>
+                                <br>
+                                <span class="devName">GABRIEL ALLBA</span>
+                            </a>
+                            <br>
+                            <span id="rielAct"></span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </header>
+
+        <!-- Quote Pop Up -->
+        <aside>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p id="quote">
+                        <!-- Random quote will be written here-->>
+                    </p>
+                </div>
+            </div>
+        </aside>
+
+            <!-- ZodiacBot-->
+        <main>
+            <section class="zodiacBotSection" id="zodiac">
+                <img class="zodiacBot" src="img/robot.png" height="470px" align="left">
+                <button class="zodiacBtn">READ MY HAND</button>
+                <div id="zodiacBubble">Awaiting for your request . . .<br><br><br><br><br><br></div>
+            </section>
+        </main>
+
+        <footer>
+            Codecademy Project Collaborative Work. <br>
+            &copy; Daniel Labrador &amp; Gabriel Allba 2021
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
