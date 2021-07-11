@@ -116,7 +116,7 @@ const zodQuote = {
         'your grandmother','Chris Hemsworth',
         'C. Ronaldo','Ariana Grande',
         'your friends','a lion','a komodo dragon',
-        'a tiger','a bear'
+        'a tiger','a bear','a dragon'
     ],
     
     devActivities: [
