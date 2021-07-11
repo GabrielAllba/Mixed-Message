@@ -303,7 +303,7 @@ const modalSpan = document.getElementsByClassName("close")[0];
 setTimeout(function() {
   modal.style.display = "block";
   document.getElementById("quote").innerHTML = `${zodQuote.generateQuotesByDay()} <br><br><hr><br> 📅 <span>${zodQuote.dateToday}</span>`;
-},5000)
+},2000)
 
 // Close modal
 modalSpan.onclick = function() {
